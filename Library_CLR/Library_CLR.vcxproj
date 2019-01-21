@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{22EF590F-7786-40AF-82F9-1B6C503315A4}</ProjectGuid>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>LibraryCLR</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Add_book.cpp" />
+    <ClCompile Include="Add_person.cpp" />
+    <ClCompile Include="Adventure_book.cpp" />
+    <ClCompile Include="Book.cpp" />
+    <ClCompile Include="Book_factory.cpp" />
+    <ClCompile Include="Book_management.cpp" />
+    <ClCompile Include="Borrow.cpp" />
+    <ClCompile Include="Borrow_bring_menu.cpp" />
+    <ClCompile Include="Client_user.cpp" />
+    <ClCompile Include="Criminal_book.cpp" />
+    <ClCompile Include="CSV_reader.cpp" />
+    <ClCompile Include="CSV_writer.cpp" />
+    <ClCompile Include="Document_book.cpp" />
+    <ClCompile Include="Drama_book.cpp" />
+    <ClCompile Include="Fantasy_book.cpp" />
+    <ClCompile Include="Horror_book.cpp" />
+    <ClCompile Include="Menu_logged.cpp" />
+    <ClCompile Include="No_file_exception.cpp" />
+    <ClCompile Include="Person_management.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="Reported_event.cpp" />
+    <ClCompile Include="Romance_book.cpp" />
+    <ClCompile Include="String_tokenizer.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="Login.cpp" />
+    <ClCompile Include="Search.cpp" />
+    <ClCompile Include="Main_Face.cpp" />
+    <ClCompile Include="Young_adult_book.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Add_book.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Add_person.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Adventure_book.h" />
+    <ClInclude Include="Book.h" />
+    <ClInclude Include="Book_factory.h" />
+    <ClInclude Include="Book_management.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Borrow.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Borrow_bring_menu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Client_user.h" />
+    <ClInclude Include="Criminal_book.h" />
+    <ClInclude Include="CSV_reader.h" />
+    <ClInclude Include="CSV_writer.h" />
+    <ClInclude Include="Document_book.h" />
+    <ClInclude Include="Drama_book.h" />
+    <ClInclude Include="Fantasy_book.h" />
+    <ClInclude Include="Horror_book.h" />
+    <ClInclude Include="Main_Face.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Menu_logged.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="No_file_exception.h" />
+    <ClInclude Include="Person_management.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="Reported_event.h" />
+    <ClInclude Include="Romance_book.h" />
+    <ClInclude Include="String_tokenizer.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="Login.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Search.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Constant_definitions.h" />
+    <ClInclude Include="Young_adult_book.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Add_book.resx">
+      <DependentUpon>Add_book.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_person.resx">
+      <DependentUpon>Add_person.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_management.resx">
+      <DependentUpon>Book_management.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrow.resx">
+      <DependentUpon>Borrow.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrow_bring_menu.resx">
+      <DependentUpon>Borrow_bring_menu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Face.resx">
+      <DependentUpon>Main_Face.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_logged.resx">
+      <DependentUpon>Menu_logged.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person_management.resx">
+      <DependentUpon>Person_management.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="user_names.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="users.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Penguins.jpg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

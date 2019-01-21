@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Object_definitions">
+      <UniqueIdentifier>{326e80a9-6d75-4de8-b7a8-9a00545727e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Object_definitions">
+      <UniqueIdentifier>{68845982-34bd-4338-b16b-359666c05ba1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Object_definitions\Books">
+      <UniqueIdentifier>{93a59e00-a6e1-4551-a17e-54442227d9b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Object_definitions\Books">
+      <UniqueIdentifier>{413104f5-a0e6-4cb0-8e90-7ddd81d5dd74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Object_definitions\Exceptions">
+      <UniqueIdentifier>{0865402c-ee19-4691-91c6-1822abe3e94b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Object_definitions\Exceptions">
+      <UniqueIdentifier>{d27fff8b-5e1c-46cc-9372-e4e4b73734d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Utilities">
+      <UniqueIdentifier>{896e06b6-f5ef-4584-974c-fc0271ed69d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Utilities">
+      <UniqueIdentifier>{4765e750-c5db-4e34-b6fb-2470eaa63688}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Search.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Login.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="CSV_reader.cpp">
+      <Filter>Pliki źródłowe\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Pliki źródłowe\Object_definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu_logged.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Borrow.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Borrow_bring_menu.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Book_management.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Add_book.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Add_person.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Person_management.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Main_Face.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Client_user.cpp">
+      <Filter>Pliki źródłowe\Object_definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="Book.cpp">
+      <Filter>Pliki źródłowe\Object_definitions\Books</Filter>
+    </ClCompile>
+    <ClCompile Include="Criminal_book.cpp">
+      <Filter>Pliki źródłowe\Object_definitions\Books</Filter>
+    </ClCompile>
+    <ClCompile Include="Document_book.cpp">
+      <Filter>Pliki źródłowe\Object_definitions\Books</Filter>
+    </ClCompile>
+    <ClCompile Include="Fantasy_book.cpp">
+      <Filter>Pliki źródłowe\Object_definitions\Books</Filter>
+    </ClCompile>
+    <ClCompile Include="Horror_book.cpp">
+      <Filter>Pliki źródłowe\Object_definitions\Books</Filter>
+    </ClCompile>
+    <ClCompile Include="Romance_book.cpp">
+      <Filter>Pliki źródłowe\Object_definitions\Books</Filter>
+    </ClCompile>
+    <ClCompile Include="Young_adult_book.cpp">
+      <Filter>Pliki źródłowe\Object_definitions\Books</Filter>
+    </ClCompile>
+    <ClCompile Include="Reported_event.cpp">
+      <Filter>Pliki źródłowe\Object_definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="No_file_exception.cpp">
+      <Filter>Pliki źródłowe\Object_definitions\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="Book_factory.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Pliki źródłowe\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="CSV_writer.cpp">
+      <Filter>Pliki źródłowe\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="String_tokenizer.cpp">
+      <Filter>Pliki źródłowe\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Adventure_book.cpp">
+      <Filter>Pliki źródłowe\Object_definitions\Books</Filter>
+    </ClCompile>
+    <ClCompile Include="Drama_book.cpp">
+      <Filter>Pliki źródłowe\Object_definitions\Books</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Search.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Login.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="CSV_reader.h">
+      <Filter>Pliki nagłówkowe\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>Pliki nagłówkowe\Object_definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu_logged.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Borrow.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Borrow_bring_menu.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Book_management.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Add_book.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Add_person.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Person_management.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Main_Face.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Client_user.h">
+      <Filter>Pliki nagłówkowe\Object_definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Book.h">
+      <Filter>Pliki nagłówkowe\Object_definitions\Books</Filter>
+    </ClInclude>
+    <ClInclude Include="Criminal_book.h">
+      <Filter>Pliki nagłówkowe\Object_definitions\Books</Filter>
+    </ClInclude>
+    <ClInclude Include="Horror_book.h">
+      <Filter>Pliki nagłówkowe\Object_definitions\Books</Filter>
+    </ClInclude>
+    <ClInclude Include="Document_book.h">
+      <Filter>Pliki nagłówkowe\Object_definitions\Books</Filter>
+    </ClInclude>
+    <ClInclude Include="Fantasy_book.h">
+      <Filter>Pliki nagłówkowe\Object_definitions\Books</Filter>
+    </ClInclude>
+    <ClInclude Include="Romance_book.h">
+      <Filter>Pliki nagłówkowe\Object_definitions\Books</Filter>
+    </ClInclude>
+    <ClInclude Include="Young_adult_book.h">
+      <Filter>Pliki nagłówkowe\Object_definitions\Books</Filter>
+    </ClInclude>
+    <ClInclude Include="Reported_event.h">
+      <Filter>Pliki nagłówkowe\Object_definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="No_file_exception.h">
+      <Filter>Pliki nagłówkowe\Object_definitions\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="Book_factory.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Constant_definitions.h">
+      <Filter>Pliki nagłówkowe\Object_definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="CSV_writer.h">
+      <Filter>Pliki nagłówkowe\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Pliki nagłówkowe\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="String_tokenizer.h">
+      <Filter>Pliki nagłówkowe\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Adventure_book.h">
+      <Filter>Pliki nagłówkowe\Object_definitions\Books</Filter>
+    </ClInclude>
+    <ClInclude Include="Drama_book.h">
+      <Filter>Pliki nagłówkowe\Object_definitions\Books</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Search.resx">
+      <Filter>Pliki zasobów</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <Filter>Pliki zasobów</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_logged.resx">
+      <Filter>Pliki zasobów</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrow.resx">
+      <Filter>Pliki zasobów</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_management.resx">
+      <Filter>Pliki zasobów</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrow_bring_menu.resx">
+      <Filter>Pliki zasobów</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Face.resx">
+      <Filter>Pliki zasobów</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_book.resx">
+      <Filter>Pliki zasobów</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_person.resx">
+      <Filter>Pliki zasobów</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person_management.resx">
+      <Filter>Pliki zasobów</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="user_names.csv">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="users.csv">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Penguins.jpg">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
