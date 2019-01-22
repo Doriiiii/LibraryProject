@@ -27,7 +27,7 @@ System::Void Main_Face::Login_Click(System::Object^  sender, System::EventArgs^ 
 {
 	try
 	{
-		std::vector<User*>* users = CSV_reader::Read_users(logins_path);
+		std::vector<User*>* users = CSV_reader::Read_users(path_logins);
 		if (users->size() > 0)
 		{
 			auto login_window = gcnew Login(users);

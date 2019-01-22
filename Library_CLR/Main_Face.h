@@ -6,6 +6,7 @@
 #include "Client_user.h"
 #include "No_file_exception.h"
 #include "Logger.h"
+#include "Constant_definitions.h"
 
 
 namespace LibraryCLR
@@ -30,7 +31,7 @@ namespace LibraryCLR
 
 			try
 			{
-				books = CSV_reader::Read_books(books_path);
+				books = CSV_reader::Read_books(path_books);
 			}
 			catch (No_file_exception& ex)
 			{
@@ -59,7 +60,7 @@ namespace LibraryCLR
 
 			if (books != NULL)
 			{
-				CSV_writer::Write_books(books, books_path);
+				CSV_writer::Write_books(books, path_books);
 
 				while (books->size())
 				{
@@ -72,7 +73,7 @@ namespace LibraryCLR
 
 			if (!was_log_saved)
 			{
-				Logger::Save_events();
+				CSV_writer::Write_events(Logger::Get_events());
 				was_log_saved = true;
 			}
 		}

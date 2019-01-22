@@ -123,6 +123,12 @@
     <ClCompile Include="Drama_book.cpp">
       <Filter>Pliki źródłowe\Object_definitions\Books</Filter>
     </ClCompile>
+    <ClCompile Include="History_event.cpp">
+      <Filter>Pliki źródłowe\Object_definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="User_history.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Search.h">
@@ -212,6 +218,12 @@
     <ClInclude Include="Drama_book.h">
       <Filter>Pliki nagłówkowe\Object_definitions\Books</Filter>
     </ClInclude>
+    <ClInclude Include="History_event.h">
+      <Filter>Pliki nagłówkowe\Object_definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="User_history.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Search.resx">
@@ -244,14 +256,18 @@
     <EmbeddedResource Include="Person_management.resx">
       <Filter>Pliki zasobów</Filter>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="user_names.csv">
+    <EmbeddedResource Include="User_history.resx">
       <Filter>Pliki zasobów</Filter>
-    </Text>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="users.csv">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Book_list.csv">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Login.csv">
       <Filter>Pliki zasobów</Filter>
     </None>
   </ItemGroup>

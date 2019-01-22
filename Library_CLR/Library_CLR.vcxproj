@@ -150,6 +150,7 @@
     <ClCompile Include="Document_book.cpp" />
     <ClCompile Include="Drama_book.cpp" />
     <ClCompile Include="Fantasy_book.cpp" />
+    <ClCompile Include="History_event.cpp" />
     <ClCompile Include="Horror_book.cpp" />
     <ClCompile Include="Menu_logged.cpp" />
     <ClCompile Include="No_file_exception.cpp" />
@@ -162,6 +163,7 @@
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="Search.cpp" />
     <ClCompile Include="Main_Face.cpp" />
+    <ClCompile Include="User_history.cpp" />
     <ClCompile Include="Young_adult_book.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -190,6 +192,7 @@
     <ClInclude Include="Document_book.h" />
     <ClInclude Include="Drama_book.h" />
     <ClInclude Include="Fantasy_book.h" />
+    <ClInclude Include="History_event.h" />
     <ClInclude Include="Horror_book.h" />
     <ClInclude Include="Main_Face.h">
       <FileType>CppForm</FileType>
@@ -213,6 +216,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Constant_definitions.h" />
+    <ClInclude Include="User_history.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Young_adult_book.h" />
   </ItemGroup>
   <ItemGroup>
@@ -246,11 +252,13 @@
     <EmbeddedResource Include="Search.resx">
       <DependentUpon>Search.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="User_history.resx">
+      <DependentUpon>User_history.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="user_names.csv" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="Book_list.csv" />
+    <None Include="Login.csv" />
     <None Include="users.csv" />
   </ItemGroup>
   <ItemGroup>

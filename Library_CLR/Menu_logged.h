@@ -31,7 +31,7 @@ namespace LibraryCLR
 
 			try
 			{
-				clients = CSV_reader::Read_clients(users_path);
+				clients = CSV_reader::Read_clients(path_users);
 			}
 			catch (No_file_exception& ex)
 			{
@@ -62,7 +62,7 @@ namespace LibraryCLR
 
 			if (clients != NULL)
 			{
-				CSV_writer::Write_clients(clients, users_path);
+				CSV_writer::Write_clients(clients, path_users);
 
 				while (clients->size())
 				{

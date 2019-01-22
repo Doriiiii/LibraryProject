@@ -34,7 +34,7 @@ System::Void LibraryCLR::Menu_logged::Menu_logged_FormClosed(System::Object ^ se
 {
 	if (clients != NULL)
 	{
-		CSV_writer::Write_clients(clients, users_path);
+		CSV_writer::Write_clients(clients, path_users);
 
 		while (clients->size())
 		{

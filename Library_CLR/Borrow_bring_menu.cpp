@@ -1,7 +1,10 @@
 #include "Borrow_bring_menu.h"
 #include "Borrow.h"
 #include "Reported_event.h"
+#include "History_event.h"
 #include "Logger.h"
+#include "User_history.h"
+#include "CSV_writer.h"
 #include "Constant_definitions.h"
 
 System::Void LibraryCLR::Borrow_bring_menu::button_search_Click(System::Object ^ sender, System::EventArgs ^ e)
@@ -40,6 +43,8 @@ System::Void LibraryCLR::Borrow_bring_menu::button_bring_Click(System::Object ^ 
 			{
 				(*it)->Set_borrowed_status(false);
 				Logger::Add_event(new Reported_event(code_bring_book, id, (*it)->Get_title(), text_bring_book));
+				CSV_writer::Write_history(History_event(selected_client->Get_id(), selected_client->Get_name(), selected_client->Get_surname(),
+					id, (*it)->Get_title(), (*it)->Get_author_name(), (*it)->Get_author_surname(), text_bring_book_hisotry));
 				break;
 			}
 		}
@@ -57,6 +62,23 @@ System::Void LibraryCLR::Borrow_bring_menu::button_bring_Click(System::Object ^ 
 	else
 	{
 		auto msg_resp = MessageBox::Show(this, "Select Book first!", "No book selected",
+			MessageBoxButtons::OK, MessageBoxIcon::Warning, MessageBoxDefaultButton::Button1);
+	}
+}
+
+System::Void LibraryCLR::Borrow_bring_menu::button_history_Click(System::Object ^ sender, System::EventArgs ^ e)
+{
+	if (selected_client != NULL)
+	{
+		auto history = gcnew User_history(selected_client);
+		if (!history->IsDisposed)
+		{
+			history->ShowDialog();
+		}
+	}
+	else
+	{
+		auto msg_resp = MessageBox::Show(this, "Select User first!", "No user selected",
 			MessageBoxButtons::OK, MessageBoxIcon::Warning, MessageBoxDefaultButton::Button1);
 	}
 }

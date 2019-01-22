@@ -71,9 +71,9 @@ Book * Book_factory::Create_book(int id, std::string author_name, std::string au
 			break;
 		}
 	}
-	/*else
-	{
-		book_ptr = new Book(id, author_name, author_surname, title, tags, was_borrowed);
-	}*/
+	//else
+	//{
+	//	//book_ptr = new Book(id, author_name, author_surname, title, tags, was_borrowed);
+	//}
 	return book_ptr;
 }

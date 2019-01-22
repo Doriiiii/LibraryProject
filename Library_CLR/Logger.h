@@ -12,6 +12,6 @@ public:
 	~Logger();
 
 	static void Add_event(Reported_event*);
-	static void Save_events();
+	static std::vector<Reported_event*>* Get_events();
 };
 

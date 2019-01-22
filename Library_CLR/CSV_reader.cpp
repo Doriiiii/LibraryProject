@@ -105,3 +105,34 @@ vector<Client_user*>* CSV_reader::Read_clients(string path)
 
 	return clients;
 }
+
+std::vector<History_event*>* CSV_reader::Read_history(std::string path, int user_id, std::string user_name, std::string user_surname)
+{
+	vector<History_event*> *histories = new vector<History_event*>();
+	fstream file;
+	file.open(path, std::ios::in);
+	if (file.is_open())
+	{
+		string read_row;
+		while (getline(file, read_row))
+		{
+			std::vector<std::string>* vals = String_tokenizer::split(read_row.c_str(), ';');
+			if (std::stoi((*vals)[0]) == user_id)
+			{
+				if ((*vals)[1] == user_name && (*vals)[2] == user_surname)
+				{
+					histories->push_back(new History_event(std::stoi((*vals)[0]), (*vals)[1], (*vals)[2], std::stoi((*vals)[3]),
+						(*vals)[4], (*vals)[5], (*vals)[6], (*vals)[7], (*vals)[8]));
+				}
+			}
+		}
+
+		file.close();
+	}
+	else
+	{
+		throw No_file_exception("Missing file: " + path);
+	}
+
+	return histories;
+}

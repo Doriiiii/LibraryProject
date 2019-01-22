@@ -1,4 +1,5 @@
 #include "Reported_event.h"
+#include "Constant_definitions.h"
 #include <chrono>
 
 
@@ -17,7 +18,10 @@ Reported_event::~Reported_event()
 
 std::ostream & operator<<(std::ostream &os, const Reported_event &e)
 {
-	os << e.time_stamp << ";" << e.event_code << ";" << e.event_name << ";" << e.element_id << ";" << e.element_name << ";"
-		<< std::endl;
+	tm *ltm = localtime(&e.time_stamp);
+	char date[16];
+	sprintf(date, date_format, (ltm->tm_year + 1900), (ltm->tm_mon + 1), ltm->tm_mday, ltm->tm_hour, ltm->tm_min);
+
+	os << date << ";" << e.event_code << ";" << e.event_name << ";" << e.element_id << ";" << e.element_name << ";" << std::endl;
 	return os;
 }

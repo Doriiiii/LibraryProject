@@ -66,7 +66,8 @@ namespace LibraryCLR
 		std::vector<Client_user*>* clients_all;
 
 		std::vector<Book*>* books_borrowed = nullptr;
-		Client_user* selected_client = nullptr;
+	private: System::Windows::Forms::Button^  button_history;
+			 Client_user* selected_client = nullptr;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -86,6 +87,7 @@ namespace LibraryCLR
 			this->Name_column = (gcnew System::Windows::Forms::ColumnHeader());
 			this->Surname_column = (gcnew System::Windows::Forms::ColumnHeader());
 			this->Genre_column = (gcnew System::Windows::Forms::ColumnHeader());
+			this->button_history = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -178,11 +180,22 @@ namespace LibraryCLR
 			this->Genre_column->Text = L"Genre";
 			this->Genre_column->Width = 80;
 			// 
+			// button_history
+			// 
+			this->button_history->Location = System::Drawing::Point(221, 238);
+			this->button_history->Name = L"button_history";
+			this->button_history->Size = System::Drawing::Size(75, 23);
+			this->button_history->TabIndex = 6;
+			this->button_history->Text = L"History";
+			this->button_history->UseVisualStyleBackColor = true;
+			this->button_history->Click += gcnew System::EventHandler(this, &Borrow_bring_menu::button_history_Click);
+			// 
 			// Borrow_bring_menu
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(517, 271);
+			this->Controls->Add(this->button_history);
 			this->Controls->Add(this->button_bring);
 			this->Controls->Add(this->button_borrow);
 			this->Controls->Add(this->button_search);
@@ -202,7 +215,8 @@ namespace LibraryCLR
 	private: System::Void button_search_Click(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void button_borrow_Click(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void button_bring_Click(System::Object^  sender, System::EventArgs^  e);
+	private: System::Void button_history_Click(System::Object^  sender, System::EventArgs^  e);
 	private: System::Void textBox_user_id_KeyPress(System::Object^  sender, System::Windows::Forms::KeyPressEventArgs^  e);
 			 void Update_list_view_items();
-	};
+};
 }

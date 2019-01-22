@@ -1,6 +1,8 @@
 #include "Borrow.h"
 #include "Reported_event.h"
+#include "History_event.h"
 #include "Logger.h"
+#include "CSV_writer.h"
 #include "Constant_definitions.h"
 
 System::Void LibraryCLR::Borrow::button_search_Click(System::Object ^ sender, System::EventArgs ^ e)
@@ -33,6 +35,8 @@ System::Void LibraryCLR::Borrow::button_borrow_Click(System::Object ^ sender, Sy
 				user->Borrow_book(id);
 				Was_borrowed = true;
 				Logger::Add_event(new Reported_event(code_borrow_book, id, (*it)->Get_title(), text_borrow_book));
+				CSV_writer::Write_history(History_event(user->Get_id(), user->Get_name(), user->Get_surname(),
+					id, (*it)->Get_title(), (*it)->Get_author_name(), (*it)->Get_author_surname(), text_borrow_book_history));
 
 				this->Close();
 				return;

@@ -1,4 +1,5 @@
-1;Gena;Showalter;Alicja w krainie zombi;1;Fantasy;fantastyka;mi³oœæ;m³odzie¿;zombi;
+1;Gena;Showalter;Alicja w krainie zombi;0;Fantasy;fantastyka;mi³oœæ;m³odzie¿;zombi;
+2;Gena;Showalter;Alicja i lustro zombi;0;Fantasy;fantastyka;mi³oœæ;m³odzie¿;zombi;
 3;Gena;Showalter;Alicja królowa zombi;0;Fantasy;fantastyka;mi³oœæ;m³odzie¿;zombi;
 4;Gena;Showalter;Alicja i uczta zombi;0;Fantasy;fantastyka;mi³oœæ;m³odzie¿;zombi;
 5;Sylvain;Reynard;Piek³o Gabriela;0;Dante;Romance;romans;seks;
@@ -10,10 +11,10 @@
 11;Blanka;Lipiñska;365 dni;0;Romance;romans;seks;
 12;Stephen;King;Smêtarz zwie¿¹t;0;Horror;horror;zombi;zwierzêta;
 13;Stephen;King;Wszystko jest wzglêdne;0;Horror;horror;opowiadania;
-14;Stephen;King;To;1;Horror;horror;klaun;zagadka;
+14;Stephen;King;To;0;Horror;horror;klaun;zagadka;
 15;Jordan;Belfort;Wilk z Wall  Street;0;Document;dokument;na faktach;pieni¹dze;
 16;Jordan;Belfort;Polowanie na Wilka z Wall Street;0;Document;dokument;na faktach;pieni¹dze;
-17;Jordan;Belfort;Droga Wilka z Wall Street;1;Document;dokument;na faktach;pieni¹dze;
+17;Jordan;Belfort;Droga Wilka z Wall Street;0;Document;dokument;na faktach;pieni¹dze;
 18;Carlo;Martigli;Heretyk;0;Fantasy;fantastyka;inkwizytor;koœció³;
 19;P.C.;Cast;Naznaczona;0;Fantasy;fantastyka;romans;wampiry;wierzenia;
 20;P.C.;Cast;Zdradzona;0;Fantasy;fantastyka;romans;wampiry;wierzenia;
@@ -26,7 +27,7 @@
 27;Stephenie;Meyer;Chemik;0;Fantasy;fantastyka;
 28;Veronica;Roth;Niezgodna;0;Fantasy;fantastyka;mi³oœæ;nowy œwiat;zbuntowanie;
 29;Veronica;Roth;Zbuntowana;0;Fantasy;fantastyka;mi³oœæ;nowy œwiat;zbuntowanie;
-30;Veronica;Roth;Wierna;0;Fantasy;fantastyka;mi³oœæ;nowy œwiat;zbuntowanie;
+30;Veronica;Roth;Wierna;1;Fantasy;fantastyka;mi³oœæ;nowy œwiat;zbuntowanie;
 31;Veronica;Roth;Spêtani przeznaczeniem;0;Fantasy;fantastyka;mi³oœæ;przeznaczenie;
 32;Veronica;Roth;Naznaczeni œmierci¹;0;Fantasy;fantastyka;mi³oœæ;przeznaczenie;
 33;Colleen;Hoover;Ta dziewczyna;0;Young adult;drugie dno;mi³oœæ;young adult;
@@ -72,12 +73,12 @@
 73;Robert;Tekieli;Egzorcyzmy i opêtania;0;Document;dokument;opowiadania;pamiêtnik;
 74;Eden;Maguire;Mroczny anio³;0;Fantasy;fantastyka;mi³oœæ;zemsta;
 75;Jojo;Moyes;Zanim siê pojawi³eœ;0;Romance;mi³oœæ;romans;upoœledzenie;
+76;Jerzy;Wlaz³o;Kot syjonu;0;Horror;horror;zagadka;zwierzêta;
 79;Laini;Taylor;Córka dymu i koœci;1;Fantasy;fantastyka;mi³oœæ;zemsta;
 80;Sara;Grant;Neva;0;Fantasy;fantastyka;mi³oœæ;zbuntowanie;
 83;Roderick;Gordon;Tunele;1;Adventure;
 84;Roderick;Gordon;Tunele: G³êbiej;1;Adventure;
 85;Roderick;Gordon;Tunele: Otch³añ;1;Adventure;
 86;Roderick;Gordon;Tunele: Spirala;1;Adventure;
-87;Carrie;Ryan;Las zêbów i r¹k;1;Fantasy;
-88;Carrie;Ryan;Œmiercionoœne fale;0;Fantasy;
-89;Cathy;Reihs;Koœci;0;Document;
+87;Kathy;Reihs;206 Koœci;0;Criminal;
+88;Kathy;Reihs;Deja dead;0;Criminal;
